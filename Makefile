@@ -5,6 +5,8 @@ GOBUILD=CGO_ENABLED=0 go build -trimpath -ldflags '-w -s'
 
 PLATFORM_LIST = \
 	darwin-amd64 \
+	windows-386 \
+	windows-amd64 \
 	linux-386 \
 	linux-amd64 \
 	linux-armv5 \
@@ -21,13 +23,19 @@ PLATFORM_LIST = \
 	freebsd-amd64
 
 
-all: linux-amd64 darwin-amd64
+all: windows-386 linux-amd64 darwin-amd64
 
 docker:
 	$(GOBUILD) -o $(BINDIR)/$(NAME)-$@
 
 darwin-amd64:
 	GOARCH=amd64 GOOS=darwin $(GOBUILD) -o $(BINDIR)/$(NAME)-$@
+
+windows-386:
+	GOARCH=386 GOOS=windows $(GOBUILD) -o $(BINDIR)/$(NAME)-$@
+
+windows-amd64:
+	GOARCH=amd64 GOOS=windows $(GOBUILD) -o $(BINDIR)/$(NAME)-$@
 
 linux-386:
 	GOARCH=386 GOOS=linux $(GOBUILD) -o $(BINDIR)/$(NAME)-$@
