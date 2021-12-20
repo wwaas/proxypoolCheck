@@ -18,16 +18,16 @@ database_url: ""
 # interval between each crawling
 crawl-interval:    700   # v0.5.x default 60 (minutes)
 crontime:          700   # v0.4.x default 60 (minutes). Deprecated in the newest version
-healthcheck-connection:  600  # v0.7.2 default 500
+healthcheck-connection:  700  # v0.7.2 default 500
 healthcheck-timeout: 10 # default 5 (seconds)
 
 # speed test
-#speedtest: false      # default false. Warning: this will consume large network resources.
-speedtest: true      # default false. Warning: this will consume large network resources.
+speedtest: false      # default false. Warning: this will consume large network resources.
+#speedtest: true      # default false. Warning: this will consume large network resources.
 speedtest-interval: 2880  # default 720 (min)
 speed-timeout:      15  # default 10 (seconds).
-speed-connection:   20  # v0.7.2 default 5
-connection:         20  # default 5. The number of speed test connections simultaneously
+speed-connection:   25  # v0.7.2 default 5
+connection:         25  # default 5. The number of speed test connections simultaneously
 ## active proxy speed test
 active-interval:   180    # default 60 (min)
 active-frequency:  100   # default 100 (requests per interval)
