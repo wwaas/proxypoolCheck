@@ -6,8 +6,8 @@ port:                 # default 12580
 source-files:
   # use local file
 - /root/proxypool/config/source.yaml
-  # use web file
-  # - https://example.com/config/source.yaml
+  # use web file 
+- https://raw.githubusercontent.com/shoujiyanxishe/atu/main/etproxypool.list
 
 # ======= 可选项，留空使用default值  =======
 
