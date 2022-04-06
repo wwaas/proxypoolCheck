@@ -30,7 +30,7 @@ speed-timeout:      15  # default 10 (seconds).
 speed-connection:   25  # v0.7.2 default 5
 connection:         25  # default 5. The number of speed test connections simultaneously
 ## active proxy speed test
-active-interval:   180    # default 60 (min)
+active-interval:   240    # default 60 (min)
 active-frequency:  100   # default 100 (requests per interval)
 active-max-number: 300   # default 100. If more than this number of active proxies, the extra will be deprecated by speed
 
