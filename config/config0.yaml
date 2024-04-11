@@ -10,8 +10,8 @@ source-files:
   # use web file
   # - https://example.com/config/source.yaml
   #- https://raw.githubusercontent.com/shoujiyanxishe/atu/main/etproxypool.list
-  #- https://raw.githubusercontent.com/wwaas/proxypoolCheck/master/config/nodelist.txt
-  - https://raw.githubusercontent.com/wwaas/proxypoolCheck/master/config/config0.yaml
+  - https://raw.githubusercontent.com/wwaas/proxypoolCheck/master/config/nodelist.txt
+  #- https://raw.githubusercontent.com/wwaas/proxypoolCheck/master/config/config0.yaml
 
 # ======= 可选项，留空使用default值  =======
 
