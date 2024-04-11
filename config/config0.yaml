@@ -5,13 +5,13 @@ port:                 # default 12580
 # source list file
 source-files:
   # use local file
-  - /root/proxypool/config/source.yaml
-  #- ./source.yaml
+  #- /root/proxypool/config/source.yaml
+  - ./source.yaml
   # use web file
   # - https://example.com/config/source.yaml
   #- https://raw.githubusercontent.com/shoujiyanxishe/atu/main/etproxypool.list
-  - https://raw.githubusercontent.com/wwaas/proxypoolCheck/master/config/nodelist.txt
-  #- https://raw.githubusercontent.com/wwaas/proxypoolCheck/master/config/config0.yaml
+  #- https://raw.githubusercontent.com/wwaas/proxypoolCheck/master/config/nodelist.txt
+  - https://raw.githubusercontent.com/wwaas/proxypoolCheck/master/config/source.yaml
 
 # ======= 可选项，留空使用default值  =======
 
